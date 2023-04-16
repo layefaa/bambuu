@@ -9,7 +9,7 @@ export default function Home() {
           Under Construction
         </p>
         <p className={'text-lg mb-5'}>
-          Please Contact Us on Instagram with <a className={'underline font-bold underline-offset-1'} href={'https://www.instagram.com/bambuubyo/'}> @bambuubyo</a>
+          Please Contact Us on Instagram <a className={'underline font-bold underline-offset-1'} href={'https://www.instagram.com/bambuubyo/'}> @bambuubyo</a>
         </p>
         {/*<p>Or</p>*/}
         {/*<p>*/}
