@@ -1,8 +1,8 @@
-import './globals.css'
+import '../styles/globals.css'
 
 export const metadata = {
   title: 'Bambuu',
-  description: 'Bambuu Site',
+  description: 'Bambuu Website',
 }
 
 export default function RootLayout({children}: { children: React.ReactNode }) {
