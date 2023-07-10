@@ -1,0 +1,1 @@
+export const copy_right = "© 2023 Bambuu All rights reserved."
