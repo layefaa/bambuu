@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     font: inherit;
-    border: 1px solid red;
+    border: black 1px dot-dash;
 }
 
 html {

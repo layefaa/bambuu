@@ -21,10 +21,11 @@ module.exports = {
                 'bb-primary-white': 'hsl(0,0,100%)',
                 'bb-primary-black': 'hsl(0,0%,0%)',
                 'bb-secondary-black': 'hsl(0,0%,75%)',
+                'bb-secondary-black2': 'hsl(0,0%,85%)',
                 'bb-tertiary-black': 'hsl(0,0%,50%)',
                 'bb-quaternary-black': 'hsl(0,0%,20%)',
                 'bb-quincy-black': 'hsl(180,88.2%,3.3%)',
-                'bb-primary-brown': 'hsl(35, 69%, 35%)'
+                'bb-quincy-black2': 'hsla(180, 93%, 3%, .6)',
             },
             fontSize: {
                 '14': '1.4rem',

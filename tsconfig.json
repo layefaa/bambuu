@@ -17,9 +17,12 @@
       ],
       "@assets/*": [
         "src/assets/*"
-      ] ,
+      ],
       "@content/*": [
-        "src/contents/*"
+        "src/content/*"
+      ],
+      "@interface/*": [
+        "src/interfaces.ts"
       ]
     },
     "plugins": [
