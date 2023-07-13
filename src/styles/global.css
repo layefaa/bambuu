@@ -56,3 +56,20 @@ h6 {
 #__next {
     isolation: isolate;
 }
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../../public/fonts/Avenir.otf') format('otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alika';
+    src: url('../../public/fonts/Alika.otf') format('otf'),
+    url('../../public/fonts/Alika.ttf') format('ttf');
+    font-display: swap;
+}
+
+.containerXPadding {
+    @apply px-25 lg:px-150
+}

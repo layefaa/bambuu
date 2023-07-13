@@ -27,6 +27,10 @@ module.exports = {
                 'bb-quincy-black': 'hsl(180,88.2%,3.3%)',
                 'bb-quincy-black2': 'hsla(180, 93%, 3%, .6)',
             },
+            fontFamily: {
+                'alika': ['Alika'],
+                'avenir': ['Avenir'],
+            },
             fontSize: {
                 '14': '1.4rem',
                 '16': '1.6rem',
@@ -45,6 +49,12 @@ module.exports = {
                 '40': '400',
                 '50': '500',
                 '80': '800'
+            },
+            spacing: {
+                '25': '2.5rem',
+                '30': '3rem',
+                '60': '6rem',
+                '150': '15rem'
             }
         },
     },
