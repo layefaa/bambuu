@@ -73,3 +73,11 @@ h6 {
 .containerXPadding {
     @apply px-25 lg:px-150
 }
+
+.sectionHeader {
+    @apply font-alika text-36 lg:text-56 text-bb-secondary-black capitalize;
+}
+
+.sectionHeader2 {
+    @apply font-alika text-36 lg:text-48 text-bb-secondary-black capitalize
+}
