@@ -1,8 +1,21 @@
 ---
 import { ourProcess } from '@content/index'
+import ProcessStage from '@organisms/ProcessStage.astro'
 ---
 
 <div>
 	<h2 class='sectionHeader'>{ourProcess.header}</h2>
 	<p>{ourProcess.paragraph}</p>
+	<div class='flex flex-col md:flex-row'>
+		<div class='w-full h-full'>
+			<ProcessStage />
+		</div>
+		<div class='w-full h-full'>
+			<ProcessStage />
+		</div>
+		<div class='w-full h-full'>
+			<ProcessStage />
+		</div>
+	</div>
+
 </div>

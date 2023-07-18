@@ -1,0 +1,19 @@
+---
+import ProcessImage from '../molecules/ProcessImage.astro'
+interface Props {
+	format: string
+}
+
+const { format } = Astro.props
+---
+
+<div class='bg-bb-light-brown h-full w-full'>
+	<div class='px-[2rem] flex w-full aspect-[1] -mt-[9rem]'>
+		<ProcessImage />
+	</div>
+	<h4 class='text-24 md:text-36 font-alika'>Header</h4>
+	<p>Paragraph</p>
+
+	<div />
+
+</div>
