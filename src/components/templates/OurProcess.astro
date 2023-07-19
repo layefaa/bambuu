@@ -3,19 +3,19 @@ import { ourProcess } from '@content/index'
 import ProcessStage from '@organisms/ProcessStage.astro'
 ---
 
-<div>
-	<h2 class='sectionHeader'>{ourProcess.header}</h2>
-	<p>{ourProcess.paragraph}</p>
-	<div class='flex flex-col md:flex-row'>
-		<div class='w-full h-full'>
-			<ProcessStage />
-		</div>
-		<div class='w-full h-full'>
-			<ProcessStage />
-		</div>
-		<div class='w-full h-full'>
-			<ProcessStage />
-		</div>
-	</div>
 
+<div class='flex flex-col md:grid md:gap-[3rem] grid-rows-6 grid-cols-12 h-[60rem] bg-red-400'>
+	<div class='col-span-6 row-span-2'>
+		<h2 class='sectionHeader mb-[3rem]'>{ourProcess.header}</h2>
+		<p class='w-4/5'>{ourProcess.paragraph}</p>
+	</div>
+	<div class='w-full col-span-6 row-span-2 row-start-6'>
+		<ProcessStage paragraph='After modeling we enter the manufacturing process' header='Manufacturing' />
+	</div>
+	<div class='w-full h-full col-span-3 row-span-3 row-start-5'>
+		<ProcessStage paragraph='After modeling we enter the manufacturing process' header='Manufacturing' />
+	</div>
+	<div class='w-full h-full col-span-3 row-span-3 row-start-4 '>
+		<ProcessStage paragraph='After modeling we enter the manufacturing process' header='Manufacturing' />
+	</div>
 </div>
