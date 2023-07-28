@@ -1,7 +1,10 @@
 ---
-
+interface Props {
+	margin: string
+}
+const { margin = '-mt-[10%]' } = Astro.props
 ---
 
-<div class='w-full h-full bg-bb-secondary-white -mt-40 '>
-sfd
+<div class=`w-full h-full bg-bb-secondary-white ${margin}`>
+	sfd
 </div>
