@@ -33,6 +33,7 @@ module.exports = {
                 // 'bb-quincy-black': 'hsl(180,88.2%,3.3%)',
                 // 'bb-quincy-black2': 'hsla(180, 93%, 3%, .6)',
                 'bb-light-brown': 'hsla(36, 37%, 74%, 1)',
+                'bb-dark-brown': 'hsla(32, 66%, 55%, 1)',
             },
             fontFamily: {
                 'alika': ['Alika'],
