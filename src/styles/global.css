@@ -69,6 +69,10 @@ h6 {
     font-display: swap;
 }
 
+/*.section {*/
+/*    @apply*/
+/*}*/
+
 .containerXPadding {
     @apply px-25 lg:px-150
 }
