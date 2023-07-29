@@ -1,9 +1,11 @@
 ---
 import { rollWithSection } from '@content/index'
+import Button from '@atoms/Button'
 ---
-<div class='containerXPadding flex flex-col items-center py-[3rem] pb-[7rem] md:pb-[12rem] md:py-[5rem] xl:py-[5rem] xl:pb-[20rem]'>
+<div
+	class='containerXPadding flex flex-col items-center py-[3rem] pb-[7rem] md:pb-[12rem] md:py-[5rem] xl:py-[5rem] xl:pb-[20rem]'>
 	<h3
 		class='sectionHeader2 w-4/5 md:w-2/3 lg:w-full text-center mb-[3rem] md:mb-[5rem] xl:mb-[7rem]'>{rollWithSection.header}</h3>
 	<p class='w-4/5 md:w-2/3 xl:w-1/2 text-center mb-[5rem] md:mb-[7rem] xl:mb-[9rem]'>{rollWithSection.paragraph}</p>
-	<button>{rollWithSection.cta}</button>
+	<Button label={rollWithSection.cta} />
 </div>

@@ -1,6 +1,7 @@
 ---
 import { featuredProjects } from '@content/index'
-import FeaturedProjectItem from '../organisms/FeaturedProjectItem.astro'
+import FeaturedProjectItem from '@organisms/FeaturedProjectItem.astro'
+import Button from '@atoms/Button'
 ---
 
 <div class='containerXPadding flex flex-col items-center'>
@@ -23,7 +24,7 @@ import FeaturedProjectItem from '../organisms/FeaturedProjectItem.astro'
 		</div>
 		<div
 			class='h-[15rem] w-full md:h-auto md:col-span-6 xl:col-span-4 md:row-span-1 xl:col-start-9 xl:row-start-4 flex items-center justify-center'>
-			<button>{featuredProjects.cta}</button>
+			<Button label={featuredProjects.cta}/>
 		</div>
 	</div>
 	<button></button>

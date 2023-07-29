@@ -6,11 +6,11 @@ const Button = ({ label, onClick, type = 'button', active, isLoading, isSuccess,
 		case 'button':
 			return (
 				<button onClick={onClick}
-								className={`px-[1.6rem] py-[1rem] font-[400] text-20 relative rounded group overflow-hidden text-bb-primary-white bg-bb-secondary-black inline-flex rounded-[60px] items-center`}>
+								className={`px-[2.4rem] py-[1.6rem] font-[400] text-20 relative rounded group overflow-hidden text-bb-primary-white bg-bb-secondary-black inline-flex rounded-[60px] items-center`}>
         <span
 					className='absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-500 ease-out transform translate-x-0 bg-ce-secondary-white group-hover:w-full '></span>
 					<span className='relative group-hover:text-ce-primary-black'> {label}</span>
-					<svg width='13' height='10' viewBox='0 0 13 10'
+					<svg width='20' height='20' viewBox='0 0 13 10'
 							 className={'relative ml-[1rem] fill-bb-dark-brown group-hover:fill-ce-primary-black'}
 							 xmlns='http://www.w3.org/2000/svg'>
 						<path
