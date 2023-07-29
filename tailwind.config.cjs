@@ -24,7 +24,7 @@ module.exports = {
                 'bb-secondary-black': 'hsl(0, 0%, 0%)',
                 'bb-tertiary-black': 'hsla(180, 93.8%, 3.1%, 0.75)',
                 'bb-quaternary-black': 'hsla(180, 93%, 3%, .6)',
-
+                'bb-border' : 'hsla(194.67, 33.33%, 22.12%, 0.10)',
                 // 'bb-primary-black': 'hsl(0,0%,0%)',
                 // 'bb-secondary-black': 'hsl(0,0%,75%)',
                 // 'bb-secondary-black2': 'hsl(0,0%,85%)',
@@ -34,6 +34,7 @@ module.exports = {
                 // 'bb-quincy-black2': 'hsla(180, 93%, 3%, .6)',
                 'bb-light-brown': 'hsla(36, 37%, 74%, 1)',
                 'bb-dark-brown': 'hsla(32, 66%, 55%, 1)',
+
             },
             fontFamily: {
                 'alika': ['Alika'],

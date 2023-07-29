@@ -1,6 +1,7 @@
 export interface link {
     name: string
     url: string
+    classes?: string
 }
 
 export interface IButton {

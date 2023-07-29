@@ -1,13 +1,13 @@
-import React from 'react';
-import type {link} from "@interface/*";
+import React from 'react'
+import type { link } from '@interface/*'
 
 
-const Link = ({name, url}: link) => {
-    return (
-        <a href={url} className={'text-bb-quincy-black2 font-[300]'}>
-            {name}
-        </a>
-    );
-};
+const Link = ({ name, url, classes }: link) => {
+	return (
+		<a href={url} className={`font-[400] ${classes}`}>
+			{name}
+		</a>
+	)
+}
 
-export default Link;
+export default Link
