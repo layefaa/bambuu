@@ -1,9 +1,31 @@
 ---
 import Logo from '@atoms/Logo.astro'
+import Link from '@atoms/Link'
+import { links } from '@content/info'
 ---
 
 <div class='containerXPadding bg-transparent w-full flex justify-between py-[4rem] fixed'>
-	<div>Links</div>
+	<div class='flex gap-[4rem] w-[40%] navbar'>
+		{links.map((x, index) => {
+			return (
+				<Link key={index} url={x.url} name={x.name} />
+			)
+		})}
+	</div>
 	<Logo dimension='w-[8.2rem lg:w-[12.2rem]' />
-	<div>Socials</div>
+	<div class='w-[40%]'>Socials</div>
 </div>
+
+
+<script>
+	const nav = document.querySelector('.navbar')
+	const navLinks = nav.querySelectorAll('a')
+	const currentURL = window.location.href
+	navLinks.forEach((link) => {
+		if (link.href === currentURL) {
+			link.classList.add('activeLink')
+			link.children[0].classList.add('activeLine')
+		}
+	})
+</script>
+

@@ -69,14 +69,16 @@ h6 {
     font-display: swap;
 }
 
-/*.section {*/
-/*    @apply*/
-/*}*/
 
+/*Global Horizontal Padding*/
 .containerXPadding {
     @apply px-25 lg:px-150
 }
 
+/*Global Horizontal Padding*/
+
+
+/*Global Section Headers*/
 .sectionHeader {
     @apply font-alika text-36 lg:text-56 text-bb-secondary-black capitalize;
 }
@@ -84,3 +86,20 @@ h6 {
 .sectionHeader2 {
     @apply font-alika text-36 lg:text-48 text-bb-secondary-black capitalize
 }
+/*Global Section Headers*/
+
+/*Active Link*/
+.line {
+    transition-property: width;
+}
+.activeLink {
+    color: red;
+}
+
+.activeLine {
+    width: 80%;
+    opacity: 1!important;
+}
+
+/*Active Link*/
+
