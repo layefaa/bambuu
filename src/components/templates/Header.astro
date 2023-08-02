@@ -2,18 +2,23 @@
 import Logo from '@atoms/Logo.astro'
 import Link from '@atoms/Link'
 import { links } from '@content/info'
+import Menu from '@atoms/Menu.astro'
 ---
 
-<div class='containerXPadding bg-transparent w-full flex justify-between items-center py-[4rem] fixed'>
-	<div class='flex gap-[4rem] w-[40%] bg-red-400 navbar'>
+<div class='containerXPadding z-20 bg-bb-secondary-white w-full flex justify-between items-center py-[2rem] fixed'>
+	<div class='gap-[4rem] w-[40%] navbar hidden md:flex'>
 		{links.map((x, index) => {
 			return (
 				<Link key={index} url={x.url} name={x.name} />
 			)
 		})}
 	</div>
-	<Logo dimension='w-[8.2rem lg:w-[12.2rem] bg-red-400' />
-	<div class='w-[40%] flex justify-end'>Socials</div>
+	<div class='md:hidden'>
+		<Menu/>
+	</div>
+	<Logo dimension='w-[8.2rem] lg:w-[12.2rem]' />
+	<div class=' md:hidden'/>
+	<div class='w-[40%] hidden md:flex justify-end'>Socials</div>
 </div>
 
 
