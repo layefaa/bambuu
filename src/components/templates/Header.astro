@@ -4,16 +4,16 @@ import Link from '@atoms/Link'
 import { links } from '@content/info'
 ---
 
-<div class='containerXPadding bg-transparent w-full flex justify-between py-[4rem] fixed'>
-	<div class='flex gap-[4rem] w-[40%] navbar'>
+<div class='containerXPadding bg-transparent w-full flex justify-between items-center py-[4rem] fixed'>
+	<div class='flex gap-[4rem] w-[40%] bg-red-400 navbar'>
 		{links.map((x, index) => {
 			return (
 				<Link key={index} url={x.url} name={x.name} />
 			)
 		})}
 	</div>
-	<Logo dimension='w-[8.2rem lg:w-[12.2rem]' />
-	<div class='w-[40%]'>Socials</div>
+	<Logo dimension='w-[8.2rem lg:w-[12.2rem] bg-red-400' />
+	<div class='w-[40%] flex justify-end'>Socials</div>
 </div>
 
 

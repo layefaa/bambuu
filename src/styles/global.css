@@ -97,7 +97,7 @@ h6 {
 }
 
 .activeLine {
-    width: 80%;
+    width: 80%!important;
     opacity: 1!important;
 }
 
