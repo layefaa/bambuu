@@ -1,4 +1,28 @@
 ---
-
+import { Stat } from '@content/index'
 ---
 
+<div
+	class='containerXPadding pt-[10rem] pb-[5rem] lg:py-0 gap-[5rem]  flex flex-col lg:flex-row items-center w-full'>
+	<div class='w-full lg:w-1/2 lg:h-full '>
+		<img src='/img/chair.png'>
+	</div>
+	<div class='lg:w-1/2 lg:pl-[5rem] flex gap-[2rem] lg:gap-[4rem] flex-col'>
+		<div class='bg-bb-light-brown px-[3rem] py-[2rem]'>
+			<h2 class=' font-alika text-24 md:text-32 mb-[1rem]'>{Stat.header}</h2>
+			<p>{Stat.paragraph}</p>
+		</div>
+		<div class='flex flex-wrap'>
+			{
+				Stat.infos.map((i, index) => (
+						<div key={index} class='w-1/2 mb-2 pr-2 sm:mb-0 sm:w-1/3'>
+							<h6 class='text-24 md:text-32 text-bb-secondary-black font-50'>{i.number}+</h6>
+							<p class='text-14 md:font-20'>{i.category}</p>
+						</div>
+				)
+				)
+			}
+		</div>
+	</div>
+
+</div>
