@@ -24,7 +24,7 @@ module.exports = {
                 'bb-secondary-black': 'hsl(0, 0%, 0%)',
                 'bb-tertiary-black': 'hsla(180, 93.8%, 3.1%, 0.75)',
                 'bb-quaternary-black': 'hsla(180, 93%, 3%, .6)',
-                'bb-border' : 'hsla(194.67, 33.33%, 22.12%, 0.10)',
+                'bb-border': 'hsla(194.67, 33.33%, 22.12%, 0.10)',
                 // 'bb-primary-black': 'hsl(0,0%,0%)',
                 // 'bb-secondary-black': 'hsl(0,0%,75%)',
                 // 'bb-secondary-black2': 'hsl(0,0%,85%)',
@@ -63,9 +63,27 @@ module.exports = {
                 '25': '2.5rem',
                 '30': '3rem',
                 '60': '6rem',
+                '100': '10rem',
                 '150': '15rem'
+            },
+            gridTemplateRows: {
+                '12': 'repeat(12, minmax(0, 1fr))',
+            },
+            gridRowStart: {
+                '8': '8',
+                '9': '9',
+                '10': '10',
+                '11': '11',
+                '12': '12',
+                '13': '13',
+            },
+            gridRow: {
+                'span-7': 'span 7 / span 7',
+                'span-8': 'span 8 / span 8',
+                'span-9': 'span 9 / span 9',
             }
-        },
+        }
+
     },
     plugins: [],
 }

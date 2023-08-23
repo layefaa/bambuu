@@ -72,7 +72,7 @@ h6 {
 
 /*Global Horizontal Padding*/
 .containerXPadding {
-    @apply px-25 lg:px-150
+    @apply px-25 md:px-100 2xl:px-150
 }
 
 /*Global Horizontal Padding*/
