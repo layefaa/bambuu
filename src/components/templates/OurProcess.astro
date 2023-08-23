@@ -5,29 +5,21 @@ import ProcessStage from '@organisms/ProcessStage.astro'
 ---
 
 
-<div class=' containerXPadding flex flex-col md:grid md:gap-[3rem] grid-flow-dense grid-rows-12 h-[80rem] grid-cols-11 bg-red-400'>
-    <div class='col-span-5 border border-bb-secondary-black row-span-6 flex flex-col'>
+<div class=' containerXPadding flex flex-col md:grid md:gap-[3rem] grid-flow-dense grid-rows-12 h-[80rem] grid-cols-11'>
+    <div class='col-span-5 row-span-6 flex flex-col'>
         <h2 class='sectionHeader mb-[3rem]'>{ourProcess.header}</h2>
         <p class='w-4/5'>{ourProcess.paragraph}</p>
     </div>
-    <div class="col-span-5 row-span-5 row-start-8 row-end-13 col-start-1 border border-bb-secondary-black">
-        <ProcessStage paragraph='After modeling we enter the manufacturing process' header='Manufacturing' />
+    <div class="col-span-5 row-span-5 row-start-8 row-end-13 col-start-1 pt-[10%]">
+        <ProcessStage margin="10%" paragraph='After modeling we enter the manufacturing process'
+                      header='Manufacturing'/>
     </div>
-    <div class="col-span-3 row-span-8 col-start-6 row-start-4 row-end-12  border border-bb-secondary-black">
-
+    <div class="col-span-3 row-span-8 col-start-6 row-start-4 row-end-12 pt-[30%]">
+        <ProcessStage margin="30%" format="short" paragraph='After modeling we enter the manufacturing process'
+                      header='Manufacturing'/>
     </div>
-    <div class="col-span-3 row-span-9 col-start-9 row-start-2 row-end-11  border border-bb-secondary-black">
-
+    <div class="col-span-3 row-span-8 col-start-9 row-start-3 row-end-11  pt-[30%]">
+        <ProcessStage margin="30%" format="short" paragraph='After modeling we enter the manufacturing process'
+                      header='Manufacturing'/>
     </div>
-    <!--<div class="col-span-3 row-span-3 row-start-2 row col-start-9 border border-bb-secondary-black">-->
-
-    <!--</div>-->
-    <!--<div class='w-full h-full col-span- row-span-3 row-start-3 bg-amber-300'>-->
-    <!--</div>-->
-    <!--<div class='w-full h-full col-span-3 row-span-3 row-start-3 bg-amber-900 col-start-7 '>-->
-    <!--    &lt;!&ndash;<ProcessStage paragraph='After modeling we enter the manufacturing process' header='Manufacturing'/>&ndash;&gt;-->
-    <!--</div>-->
-    <!--<div class='w-full h-full col-span-3 row-span-3 row-start-1 bg-amber-950 col-start-10 '>-->
-    <!--    &lt;!&ndash;<ProcessStage paragraph='After modeling we enter the manufacturing process' header='Manufacturing'/>&ndash;&gt;-->
-    <!--</div>-->
 </div>
