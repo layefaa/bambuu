@@ -12,12 +12,12 @@ const {format, paragraph, header, margin} = Astro.props
 const checkFormat = () => format === 'short'
 ---
 
-<div class:list={["h-full w-full flex bg-bb-light-brown relative", {'flex-col': checkFormat()}]}>
-    <div class:list={["w-full py-[2rem] pt-[5rem] pl-[3rem]", {'order-2 pt-[2rem] text-center px-[2rem]': checkFormat()}]}>
-        <h4 class='text-24 mb-[3rem] md:text-36 font-alika'>{header}</h4>
+<div class:list={["h-[350px] w-[300px] md:h-full md:w-full flex flex-col md:flex-row bg-bb-light-brown relative", {'md:flex-col': checkFormat()}]}>
+    <div class:list={["text-center order-2 pt-[2rem] px-[2rem] md:order-1 md:text-left w-full md:py-[2rem] md:pt-[5rem] md:pl-[3rem]", {'md:order-2 md:pt-[2rem] md:text-center px-[2rem]': checkFormat()}]}>
+        <h4 class='text-24 mb-[1.5rem] md:text-36 font-alika'>{header}</h4>
         <p class='md:text-16 '>{paragraph}</p>
     </div>
-    <div class:list={[`h-full aspect-[1/1] -mt-[${margin}]`, {'order-1 px-[2rem] h-[70%]': checkFormat()}]}>
+    <div class:list={[` md:h-full md:aspect-[1/1] px-[2rem] md:px-0 -mt-[30%] h-[70%]  md:-mt-[10%]`, {' md:-mt-[30%] md:px-[2rem] h-[70%]': checkFormat()}]}>
         <ProcessImage/>
     </div>
 

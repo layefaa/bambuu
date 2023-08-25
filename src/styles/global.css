@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
     font: inherit;
+    /*border: 1px solid rebeccapurple;*/
 }
 
 html {
@@ -72,7 +73,7 @@ h6 {
 
 /*Global Horizontal Padding*/
 .containerXPadding {
-    @apply px-25 md:px-100 2xl:px-150
+    @apply px-25 sm:px-35 md:px-50 lg:px-100 2xl:px-150
 }
 
 /*Global Horizontal Padding*/
@@ -80,11 +81,11 @@ h6 {
 
 /*Global Section Headers*/
 .sectionHeader {
-    @apply font-alika text-36 lg:text-56 text-bb-secondary-black capitalize;
+    @apply font-alika text-36 lg:text-56 text-bb-secondary-black uppercase leading-[120%] md:leading-[156.81%];
 }
 
 .sectionHeader2 {
-    @apply font-alika text-36 lg:text-48 text-bb-secondary-black capitalize
+    @apply font-alika text-36 lg:text-48 text-bb-secondary-black uppercase leading-[120%] md:leading-[156.81%]
 }
 /*Global Section Headers*/
 

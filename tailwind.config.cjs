@@ -19,7 +19,7 @@ module.exports = {
         extend: {
             colors: {
                 'bb-primary-white': 'hsla(0, 0%, 100%, 1)',
-                'bb-secondary-white': 'hsla(0, 0%, 85.1%, 0.75)',
+                'bb-secondary-white': 'hsla(0, 0%, 85.1%, 1)',
                 'bb-primary-black': 'hsla(0, 0%, 0%, 0.75)',
                 'bb-secondary-black': 'hsl(0, 0%, 0%)',
                 'bb-tertiary-black': 'hsla(180, 93.8%, 3.1%, 0.75)',
@@ -62,6 +62,8 @@ module.exports = {
             spacing: {
                 '25': '2.5rem',
                 '30': '3rem',
+                '35': '3.5rem',
+                '50': '5rem',
                 '60': '6rem',
                 '100': '10rem',
                 '150': '15rem'

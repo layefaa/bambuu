@@ -19,7 +19,7 @@ export const Hero = {
 	cta: 'Contact us'
 }
 
-export const Stat = {
+export const stats = {
 	header: 'Lorem ipsum',
 	paragraph: 'Lorem ipsum dolor sit amet consectetur. Suspendisse nisl turpis in maecenas in suscipit. Tincidunt ultricies quis bibendum ultricies in non lectus cras at. Condimentum ullamcorper dignissim vulputate risus convallis ullamcorper vel id. Suspendisse nisl turpis in maecenas in suscipit. Tincidunt ultricies quis bibendum ultricies in non lectus cras at.',
 	infos: [
