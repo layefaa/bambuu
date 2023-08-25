@@ -25,13 +25,6 @@ module.exports = {
                 'bb-tertiary-black': 'hsla(180, 93.8%, 3.1%, 0.75)',
                 'bb-quaternary-black': 'hsla(180, 93%, 3%, .6)',
                 'bb-border': 'hsla(194.67, 33.33%, 22.12%, 0.10)',
-                // 'bb-primary-black': 'hsl(0,0%,0%)',
-                // 'bb-secondary-black': 'hsl(0,0%,75%)',
-                // 'bb-secondary-black2': 'hsl(0,0%,85%)',
-                // 'bb-tertiary-black': 'hsl(0,0%,50%)',
-                // 'bb-quaternary-black': 'hsl(0,0%,20%)',
-                // 'bb-quincy-black': 'hsl(180,88.2%,3.3%)',
-                // 'bb-quincy-black2': 'hsla(180, 93%, 3%, .6)',
                 'bb-light-brown': 'hsla(36, 37%, 74%, 1)',
                 'bb-dark-brown': 'hsla(32, 66%, 55%, 1)',
 

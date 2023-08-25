@@ -94,7 +94,7 @@ h6 {
     transition-property: width;
 }
 .activeLink {
-    color: red;
+    color: black;
 }
 
 .activeLine {

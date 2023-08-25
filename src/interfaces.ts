@@ -2,6 +2,7 @@ export interface link {
     name: string
     url: string
     classes?: string
+    animate?: boolean
 }
 
 export interface IButton {

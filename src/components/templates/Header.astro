@@ -1,43 +1,43 @@
 ---
 import Logo from '@atoms/Logo.astro'
 import Link from '@atoms/Link'
-import { links } from '@content/info'
+import {links} from '@content/info'
 import Menu from '@atoms/Menu.astro'
 ---
 
 <div class='containerXPadding z-20 bg-bb-secondary-white w-full flex justify-between items-center py-[2rem] fixed'>
-	<div class='gap-[4rem] w-[40%] navbar hidden md:flex'>
-		{links.map((x, index) => {
-			return (
-				<Link key={index} url={x.url} name={x.name} />
-			)
-		})}
-	</div>
-	<!--Mobile-->
-	<div class='md:hidden'>
-		<Menu />
-	</div>
-	<!--Mobile-->
+    <div class='gap-[4rem] w-[40%] navbar hidden md:flex'>
+        {links.map((x, index) => {
+            return (
+                    <Link classes= {'text-bb-tertiary-black'} key={index} url={x.url} name={x.name} animate={true}/>
+            )
+        })}
+    </div>
+    <!--Mobile-->
+    <div class='md:hidden'>
+        <Menu/>
+    </div>
+    <!--Mobile-->
 
-	<Logo dimension='w-[8.2rem] lg:w-[12.2rem]' />
+    <Logo dimension='w-[8.2rem] lg:w-[12.2rem]'/>
 
-	<!--Mobile-->
-	<div class=' md:hidden' />
-	<!--Mobile-->
-	
-	<div class='w-[40%] hidden md:flex justify-end'>Socials</div>
+    <!--Mobile-->
+    <div class=' md:hidden'/>
+    <!--Mobile-->
+
+    <div class='w-[40%] hidden md:flex justify-end'>Socials</div>
 </div>
 
 
 <script>
-	const nav = document.querySelector('.navbar')
-	const navLinks = nav.querySelectorAll('a')
-	const currentURL = window.location.href
-	navLinks.forEach((link) => {
-		if (link.href === currentURL) {
-			link.classList.add('activeLink')
-			link.children[0].classList.add('activeLine')
-		}
-	})
+    const nav = document.querySelector('.navbar')
+    const navLinks = nav.querySelectorAll('a')
+    const currentURL = window.location.href
+    navLinks.forEach((link) => {
+        if (link.href === currentURL) {
+            link.classList.add('activeLink')
+            link.children[0].classList.add('activeLine')
+        }
+    })
 </script>
 
