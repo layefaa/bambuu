@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
 import 'src/styles/global.css'
 import Footer from '@templates/Footer.astro'
 import Header from '@templates/Header.astro'
@@ -12,6 +13,7 @@ const { title } = Astro.props
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+	<ViewTransitions />
 	<meta charset='UTF-8' />
 	<meta name='description' content='Bambuu Website'>
 	<meta name='viewport' content='width=device-width' />
@@ -19,6 +21,7 @@ const { title } = Astro.props
 	<link rel='apple-touch-icon' type='image/svg+xml' href='/favicon.svg' />
 	<meta name='generator' content={Astro.generator} />
 	<title>{title}</title>
+
 </head>
 <body class='text-[1.4rem] lg:text-[2rem] font-avenir'>
 <Header />
