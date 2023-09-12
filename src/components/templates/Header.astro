@@ -1,43 +1,28 @@
 ---
 import Logo from '@atoms/Logo.astro'
-import Link from '@atoms/Link'
 import Menu from '@atoms/Menu'
-import { links } from '@content/info'
+import NavLinks from '@molecules/NavLinks.astro'
+import MobileNav from '@organisms/MobileNav.astro'
 ---
 
 <div class='containerXPadding z-20 bg-bb-secondary-white w-full flex justify-between items-center py-[2rem] fixed'>
 	<div class='gap-[4rem] w-[40%] navbar hidden md:flex'>
-		{links.map((x, index) => {
-			return (
-				<Link classes={'text-bb-tertiary-black'} key={index} url={x.url} name={x.name} animate={true} />
-			)
-		})}
+		<NavLinks />
 	</div>
-	<!--Mobile-->
-	<div class=' w-[10%] md:hidden'>
+	<!--Mobile Start-->
+	<div class=' w-[10%]  z-30 md:hidden'>
 		<Menu client:only='react' />
 	</div>
-	<!--Mobile-->
-
-	<Logo dimension='w-[8.2rem] lg:w-[12.2rem]' />
-
-	<!--Mobile-->
+	<!--Mobile End-->
+	<Logo classes='w-[8.2rem] lg:w-[12.2rem] z-30' />
+	<!--Mobile Start-->
 	<div class='w-[10%] md:hidden' />
-	<!--Mobile-->
+	<!--Mobile End-->
 
 	<div class='w-[40%] hidden md:flex justify-end'>Socials</div>
+	<MobileNav />
 </div>
 
 
-<script>
-	const nav = document.querySelector('.navbar')
-	const navLinks = nav.querySelectorAll('a')
-	const currentURL = window.location.href
-	navLinks.forEach((link) => {
-		if (link.href === currentURL) {
-			link.classList.add('activeLink')
-			link.children[0].classList.add('activeLine')
-		}
-	})
-</script>
+
 

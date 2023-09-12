@@ -1,0 +1,24 @@
+---
+import NavLinks from '@molecules/NavLinks.astro'
+import { isMenuOpen } from '@store/index.ts'
+---
+
+<div id='Nav'
+		 class='z-20 h-screen w-screen containerXPadding bg-bb-primary-white absolute top-0 left-0 grid-cols-4 grid-rows-6'>
+	<div class='row-start-2 row-end-6'>
+		<NavLinks />
+	</div>
+	<div class='row-start-6'>
+		Follow
+	</div>
+
+</div>
+
+<script>
+	import { isMenuOpen } from '@store/index.ts'
+
+	isMenuOpen.subscribe(open => {
+		if (open) document.getElementById('Nav').style.display = 'grid'
+		else document.getElementById('Nav').style.display = 'none'
+	})
+</script>

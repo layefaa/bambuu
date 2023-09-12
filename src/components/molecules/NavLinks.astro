@@ -1,0 +1,23 @@
+---
+import { links } from '@content/info'
+import Link from '@atoms/Link'
+---
+
+{links.map((x, index) => {
+	return(
+	<Link classes={'text-bb-tertiary-black'} key={index} url={x.url} name={x.name} animate={true} />
+		)
+	})}
+
+
+<script>
+	const nav = document.querySelector('.navbar')
+	const navLinks = nav.querySelectorAll('a')
+	const currentURL = window.location.href
+	navLinks.forEach((link) => {
+		if (link.href === currentURL) {
+			link.classList.add('activeLink')
+			link.children[0].classList.add('activeLine')
+		}
+	})
+</script>
