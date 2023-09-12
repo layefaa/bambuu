@@ -26,6 +26,9 @@
       ],
       "@layouts/*": [
         "src/layouts/*"
+      ] ,
+      "@store/*": [
+        "src/store/*"
       ]
     },
     "plugins": [
@@ -33,7 +36,7 @@
         "name": "@astrojs/ts-plugin"
       }
     ],
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "jsxImportSource": "react"
   }
 }
