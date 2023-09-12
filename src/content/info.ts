@@ -6,19 +6,19 @@ export const base = {
 
 export const links = [
     {
-        name: 'home',
+        name: 'Home',
         url: '/'
     },
     {
-        name: 'about us',
+        name: 'About us',
         url: '/about'
     },
     {
-        name: 'product',
+        name: 'Product',
         url: '/about'
     },
     {
-        name: 'contact us',
+        name: 'Contact us',
         url: '/about'
     },
 ]

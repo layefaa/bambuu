@@ -1,11 +1,16 @@
 ---
 import { links } from '@content/info'
 import Link from '@atoms/Link'
+interface Props {
+	classes: string
+}
+
+const { classes } = Astro.props
 ---
 
 {links.map((x, index) => {
 	return(
-	<Link classes={'text-bb-tertiary-black'} key={index} url={x.url} name={x.name} animate={true} />
+	<Link classes={classes} key={index} url={x.url} name={x.name} animate={true} />
 		)
 	})}
 
