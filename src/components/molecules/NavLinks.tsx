@@ -1,5 +1,5 @@
-import { links } from '@content/info.ts'
-import Link from '@atoms/Link.tsx'
+import { links } from '@content/info'
+import Link from '@atoms/Link'
 
 // ---
 // import Link from '@atoms/Link'

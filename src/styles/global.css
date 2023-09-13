@@ -90,22 +90,22 @@ h6 {
 /*Global Section Headers*/
 
 /*Active Link*/
-.line {
-    transition-property: width;
-}
-.activeLink {
-    color: black;
-}
+/*.line {*/
+/*    transition-property: width;*/
+/*}*/
+/*.activeLink {*/
+/*    color: black;*/
+/*}*/
 
-.activeLine {
-    width: 80%!important;
-    opacity: 1!important;
-}
+/*.activeLine {*/
+/*    width: 80%!important;*/
+/*    opacity: 1!important;*/
+/*}*/
 
-.social-icon {
-    @apply hover:cursor-pointer aspect-square w-[45px] md:w-[35px];
-    max-width: fit-content;
-}
+/*.social-icon {*/
+/*    @apply hover:cursor-pointer aspect-square w-[45px] md:w-[35px];*/
+/*    max-width: fit-content;*/
+/*}*/
 
 /*Active Link*/
 
