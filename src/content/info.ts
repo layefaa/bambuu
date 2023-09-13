@@ -15,11 +15,11 @@ export const links = [
     },
     {
         name: 'Product',
-        url: '/about'
+        url: '/product'
     },
     {
         name: 'Contact us',
-        url: '/about'
+        url: '/contact'
     },
 ]
 
