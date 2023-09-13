@@ -2,8 +2,8 @@
 import Logo from '@atoms/Logo.astro'
 import Menu from '@atoms/Menu'
 import NavLinks from '@molecules/NavLinks.astro'
-import MobileNav from '@organisms/MobileNav.astro'
-import Socials from '@molecules/Socials.vue'
+import MobileNav from '@organisms/MobileNav'
+import Socials from '@molecules/Socials.tsx'
 ---
 
 <div class='containerXPadding z-20 bg-bb-secondary-white w-full flex justify-between items-center py-[2rem] fixed'>
@@ -21,10 +21,10 @@ import Socials from '@molecules/Socials.vue'
 	<!--Mobile End-->
 
 	<div class='w-[40%] hidden md:flex justify-end'>
-		<Socials client:only='vue' />
+		<Socials client:only='react' />
 	</div>
 	<!--Mobile Start-->
-	<MobileNav/>
+	<MobileNav client:only='react'/>
 	<!--Mobile End-->
 </div>
 
