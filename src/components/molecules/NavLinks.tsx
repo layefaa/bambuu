@@ -28,13 +28,13 @@ import Link from '@atoms/Link'
 // </script>
 
 
-const NavLinks = ({ classes }: { classes: string }) => {
+const NavLinks = () => {
 	return (
 		<>
 			{
 				links.map((x, index) => {
 						return (
-							<Link classes={classes} key={index} url={x.url} name={x.name} animate={true} />
+							<Link  key={index} url={x.url} name={x.name} animate={true} />
 						)
 					}
 				)
