@@ -29,6 +29,9 @@
       ] ,
       "@store/*": [
         "src/store/*"
+      ] ,
+      "@animations/*": [
+        "src/animations/*"
       ]
     },
     "plugins": [
