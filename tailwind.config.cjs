@@ -44,7 +44,8 @@ module.exports = {
 				'36': '3.6rem',
 				// '40': '4rem',
 				'48': '4.8rem',
-				'56': '5.6rem'
+				'56': '5.6rem',
+				'80': '8rem'
 			},
 			fontWeight: {
 				'30': '300',
@@ -75,7 +76,8 @@ module.exports = {
 			gridRow: {
 				'span-7': 'span 7 / span 7',
 				'span-8': 'span 8 / span 8',
-				'span-9': 'span 9 / span 9'
+				'span-9': 'span 9 / span 9',
+				'span-10': 'span 10 / span 10',
 			}
 		}
 

@@ -1,0 +1,15 @@
+---
+import Button from '@atoms/Button'
+import { hero } from '../../content/about'
+---
+<div
+	class='containerXPadding pt-[10rem] pb-[5rem] flex flex-col items-center w-full'>
+	<h3 class='text-black font-[400] font-alika text-center text-80 leading-[normal]'>
+		{hero.header}
+	</h3>
+	<p class='w-full lg:w-4/5 text-center'>
+		{hero.paragraph}
+	</p>
+	<Button label={hero.buttonText} />
+
+</div>
