@@ -1,3 +1,45 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@atoms/*": [
+        "src/components/atoms/*"
+      ],
+      "@molecules/*": [
+        "src/components/molecules/*"
+      ],
+      "@organisms/*": [
+        "src/components/organisms/*"
+      ],
+      "@templates/*": [
+        "src/components/templates/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@content/*": [
+        "src/content/*"
+      ],
+      "@interface/*": [
+        "src/interfaces.ts"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ] ,
+      "@store/*": [
+        "src/store/*"
+      ] ,
+      "@animations/*": [
+        "src/animations/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "@astrojs/ts-plugin"
+      }
+    ],
+    "jsx": "preserve",
+    "jsxImportSource": "react"
+  }
 }

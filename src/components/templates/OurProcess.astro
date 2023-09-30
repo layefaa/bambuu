@@ -1,0 +1,25 @@
+---
+import {ourProcess} from "@content/index.ts"
+// import ProcessStage from "../organisms/ProcessStage.astro";
+import ProcessStage from '@organisms/ProcessStage.astro'
+---
+
+
+<div class=' containerXPadding flex flex-col gap-[1.5rem] md:grid md:gap-[3rem] grid-flow-dense grid-rows-12 h-full md:h-[80rem] grid-cols-11 pb-[5rem] md:pb-0'>
+    <div class='md:col-span-5 md:row-span-6 flex flex-col'>
+        <h2 class='sectionHeader md:w-full mb-[1.5rem] md:mb-[3rem]'>{ourProcess.header}</h2>
+        <p class='md:w-4/5'>{ourProcess.paragraph}</p>
+    </div>
+    <div class="flex justify-center md:block h-full w-full col-span-5 row-span-5 row-start-8 row-end-13 col-start-1 pt-[35%] md:pt-[10%]">
+        <ProcessStage paragraph='Before going into the manufacturing process, we usually make the modeling first'
+                      header='Modeling'/>
+    </div>
+    <div class="flex justify-center md:block h-full w-full col-span-3 row-span-8 col-start-6 row-start-4 row-end-12 pt-[35%]">
+        <ProcessStage format="short" paragraph='After modeling we enter the manufacturing process'
+                      header='Manufacturing'/>
+    </div>
+    <div class="flex justify-center md:block h-full w-full col-span-3 row-span-8 col-start-9 row-start-3 row-end-11  pt-[35%]">
+        <ProcessStage format="short" paragraph='After modelingenter the final stage of finishing after that it can only be marketed we enter the manufacturing process'
+                      header='Finishing'/>
+    </div>
+</div>
