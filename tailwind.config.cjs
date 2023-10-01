@@ -20,6 +20,7 @@ module.exports = {
 			colors: {
 				'bb-primary-white': 'hsla(0, 0%, 100%, 1)',
 				'bb-secondary-white': 'hsla(0, 0%, 85.1%, 1)',
+				'bb-primary-gray' : '#eeeeed',
 				'bb-primary-black': 'hsla(0, 0%, 0%, 0.75)',
 				'bb-secondary-black': 'hsl(0, 0%, 0%)',
 				'bb-tertiary-black': 'hsla(180, 93.8%, 3.1%, 0.75)',

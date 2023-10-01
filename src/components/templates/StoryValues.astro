@@ -1,9 +1,24 @@
 ---
-
+import Card  from '@molecules/Card'
+import { ourStory, ourValues } from '@content/about'
 ---
 
 
 <div class='containerXPadding  grid grid-rows-12 gap-x-3.5 grid-cols-4 h-[70rem]'>
-	<div class='row-span-10  col-span-2 bg-bb-primary-black'></div>
-	<div class='row-span-10 row-start-3 col-start-3 col-span-2 bg-red-50 row-span'></div>
+	<div class='row-span-10  col-span-2 bg-bb-primary-black'>
+		<Card>
+			<div>
+				<h6 class='text-56 text-bb-secondary-black mb-[10rem] font-alika'>{ourStory.header}</h6>
+				<p class='text-20 leading-normal font-avenir text-bb-primary-black'>{ourStory.paragraph}</p>
+			</div>
+		</Card>
+	</div>
+	<div class='row-span-10 row-start-3 col-start-3 col-span-2 bg-red-50 row-span'>
+		<Card>
+			<div>
+				<h6 class='text-56 text-bb-secondary-black mb-[10rem] font-alika'>{ourValues.header}</h6>
+				<p class='text-20 leading-normal font-avenir text-bb-primary-black'>{ourValues.paragraph}</p>
+			</div>
+		</Card>
+	</div>
 </div>
