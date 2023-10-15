@@ -7,9 +7,9 @@ import Socials from '@molecules/Socials.tsx'
 ---
 
 <header class='containerXPadding z-20 bg-transparent w-full flex justify-between items-center py-[2rem] fixed'>
-	<div class='gap-[4rem] text-18 w-[40%] navbar hidden md:flex text-bb-tertiary-black' '>
+	<nav class='gap-[4rem] text-18 w-[40%] navbar hidden md:flex text-bb-tertiary-black' '>
 		<NavLinks client:only='react' />
-	</div>
+	</nav>
 	<!--Mobile Start-->
 	<div class=' w-[10%]  z-30 md:hidden'>
 		<Menu client:only='react' />
@@ -26,6 +26,7 @@ import Socials from '@molecules/Socials.tsx'
 	<div class='w-[40%] hidden md:flex justify-end'>
 		<Socials client='visible' />
 	</div>
+
 	<!--Mobile Start-->
 	<MobileNav client:only='react' />
 	<!--Mobile End-->
