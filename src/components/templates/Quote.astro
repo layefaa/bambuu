@@ -1,20 +1,22 @@
 ---
-import { quote, team } from '@content/about'
+import { quote, team } from '@content/about';
+
+
 ---
 
-<div class=' h-screen w-1/2 text-center '>
-	<h2 class='text-40'>
-		<svg xmlns='http://www.w3.org/2000/svg' width='96' height='69' viewBox='0 0 96 69' fill='none'>
-			<path
-				d='M27.0181 68.5202H0L23.3971 0H46.2372L27.0181 68.5202ZM76.3192 68.5202H49.3011L72.6982 0H95.5383L76.3192 68.5202Z'
-				fill='#CA872A' />
-		</svg>
+<div class=' h-full w-1/2 text-center flex bg-fuchsia-300 '>
+	<svg class='self-start' xmlns='http://www.w3.org/2000/svg' width='96' height='69' viewBox='0 0 96 69' fill='none'>
+		<path
+			d='M27.0181 68.5202H0L23.3971 0H46.2372L27.0181 68.5202ZM76.3192 68.5202H49.3011L72.6982 0H95.5383L76.3192 68.5202Z'
+			fill='#CA872A' />
+	</svg>
+	<h2 class=`text-40`>
 		{quote}
-		<svg xmlns='http://www.w3.org/2000/svg' width='96' height='69' viewBox='0 0 96 69' fill='none'>
-			<path
-				d='M27.0181 68.5202H0L23.3971 0H46.2372L27.0181 68.5202ZM76.3192 68.5202H49.3011L72.6982 0H95.5383L76.3192 68.5202Z'
-				fill='#CA872A' />
-		</svg>
 	</h2>
+	<svg class='self-end' xmlns='http://www.w3.org/2000/svg' width='96' height='69' viewBox='0 0 96 69' fill='none'>
+		<path
+			d='M27.0181 68.5202H0L23.3971 0H46.2372L27.0181 68.5202ZM76.3192 68.5202H49.3011L72.6982 0H95.5383L76.3192 68.5202Z'
+			fill='#CA872A' />
+	</svg>
 
 </div>
