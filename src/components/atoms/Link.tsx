@@ -1,7 +1,19 @@
 import type { link } from '@interface/*'
+import { useEffect } from 'react'
 
-
+const { pathname } = window.location
+const activeLinkElement = document.querySelector(
+	`a[href="${pathname}"]`
+)
 const Link = ({ name, url, classes, animate }: link) => {
+
+	useEffect(() => {
+		() => {
+			if (activeLinkElement){
+				activeLinkElement.classList.add('active')
+			}
+		}
+	}, [pathname])
 	return (
 		<a href={url}>
 			<span className={`block ${classes}`}>
