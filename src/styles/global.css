@@ -93,9 +93,9 @@ h6 {
 /*.line {*/
 /*    transition-property: width;*/
 /*}*/
-/*.activeLink {*/
-/*    color: black;*/
-/*}*/
+.active {
+    color: red;
+}
 
 /*.activeLine {*/
 /*    width: 80%!important;*/
